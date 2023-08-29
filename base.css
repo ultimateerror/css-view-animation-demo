@@ -1,0 +1,27 @@
+.force-scroll-container {
+	height: 70dvh;
+}
+
+.box {
+	width: 3em;
+	height: 3em;
+
+	animation-timeline: view(block 30% 50%);
+	animation-name: boxAnim;
+	animation-fill-mode: both;
+	animation-timing-function: linear;
+}
+
+@keyframes boxAnim {
+	from {
+		transform: rotate(0deg);
+		background: red;
+	}
+	50% {
+		scale: 1.5;
+	}
+	to {
+		transform: rotate(360deg);
+		background: blue;
+	}
+}
